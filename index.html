@@ -408,6 +408,27 @@
       <section>
         <h2>Contest Experience<span class="period-mark">.</span></h2>
         <div class="other">
+          <h3>2024 제1회 전국대학 소프트웨어 성과 공유 포럼<span class="period-mark">.</span></h3>
+          <span class="role">contestant</span>
+          <span class="time"
+            ><time datetime="2024-08">2024. 08.</time> </span
+          >
+          <h5>Description<span class="period-mark">.</span></h5>
+          <p>
+            '퍼스널컬러, 얼굴형, 체형에 기반한 패션 추천시스템' 라는 주제로 <a href="https://news.unn.net/news/articleView.html?idxno=567090">포럼</a>에 참가하였습니다. 기술상을 수상하였습니다.
+          </p>
+          <h5>What did I do<span class="period-mark">.</span></h5>
+          <ul>
+            <li>얼굴 사진과 전신 사진으로부터 얼굴형과 체형 추출</li>
+            <li>측정된 퍼스널컬러, 얼굴형, 체형에 기반하여 패션 추천(randomforest사용)</li>
+            <li>streamlit으로 UI제작</li>
+          </ul>
+          <h5>Tech Stack<span class="period-mark">.</span></h5>
+          <p>
+            Python, tensorflow, scikit-learn, streamlit
+          </p>
+        </div>
+        <div class="other">
           <h3>PNU Tiny ML Challenge 2023<span class="period-mark">.</span></h3>
           <span class="role">contestant</span>
           <span class="time"
@@ -434,25 +455,26 @@
       <section>
         <h2>Current Project<span class="period-mark">.</span></h2>
         <div class="other">
-          <h3>ESP32 보드와 가속도센서 및 tensorflow-lite를 활용한 anomaly detection<span class="period-mark">.</span></h3>
+          <h3>stm32 보드와 마이크 및 tensorflow-lite를 활용한 keyword detection<span class="period-mark">.</span></h3>
           <span class="role">Developer</span>
           <span class="time"
-            ><time datetime="2024-05">2024. 05.</time>- <time datetime="2024-06">current</time> </span
+            ><time datetime="2024-07">2024. 07.</time>- <time datetime="2024-08">current</time> </span
           >
           <h5>Description<span class="period-mark">.</span></h5>
           <p>
-            학부연구생 중에 가속도 센서와 ESP32가 I2C로 통신하고, ESP32에 autoencoder 모델을 적용하여 이상치를 탐지합니다. 모델에 필요한 데이터(ESP32에서 측정한 데이터)는 라즈베리파이(블루투스를 통해)로 전송하여 csv파일로 생성하였습니다.<a href="https://github.com/minchoCoin/embedded-research">소스코드 링크</a>
+            학부연구생 중에 stm32보드와 마이크를 사용하여 소리를 감지하고, 해당 목소리의 키워드(up,down,yes,no,go,stop,left,right)를 감지하는 프로젝트를 하고 있습니다.
           </p>
           <h5>What do I do<span class="period-mark">.</span></h5>
           <ul>
-            <li>ESP32 - 가속도센서 I2C 통신</li>
-            <li>파이썬과 tensorflow로 autoencoder 모델 구축</li>
-            <li>tensorflow-lite로 모델 변경하여 ESP32에 적용</li>
-            <li>모델 양자화 및 최적화</li>
+            <li>stm32에서 ADC와 Timer를 사용하여 마이크 입력값 측정</li>
+            <li>소리에 stft 적용</li>
+            <li>파이썬과 tensorflow로 cnn 모델 구축</li>
+            <li>tensorflow-lite로 모델 변경하여 stm32에 적용</li>
+            <li>모델 양자화(int8) 및 최적화</li>
           </ul>
           <h5>Tech Stack<span class="period-mark">.</span></h5>
           <p>
-            C, C++, ESP32, FreeRTOS, Python, Tensorflow, Tensorflow-lite
+            C, stm32, STM32CubeIDE(with stm32cube.AI, DSP Library) 
           </p>
         </div>
 <!--
@@ -482,6 +504,28 @@
 
       <section>
         <h2>Project Experience<span class="period-mark">.</span></h2>
+        <div class="other">
+          <h3>ESP32 보드와 가속도센서 및 tensorflow-lite를 활용한 anomaly detection<span class="period-mark">.</span></h3>
+          <span class="role">Developer</span>
+          <span class="time"
+            ><time datetime="2024-05">2024. 05.</time>- <time datetime="2024-07">2024.07</time> </span
+          >
+          <h5>Description<span class="period-mark">.</span></h5>
+          <p>
+            학부연구생 중에 가속도 센서와 ESP32가 I2C로 통신하고, ESP32에 autoencoder 모델을 적용하여 이상치를 탐지하는 프로젝트를 하였습니다. 모델에 필요한 데이터(ESP32에서 측정한 데이터)는 라즈베리파이(블루투스를 통해)로 전송(<a href="https://github.com/minchoCoin/embedded-research/tree/main/1-ICM20948-ESP32-Raspberry_Pi_4B">소스코드</a>)하여 csv파일로 생성하였습니다.<a href="https://github.com/minchoCoin/embedded-research/tree/main/4-anomaly_detection_on_esp32_ver2">소스코드 링크</a>
+          </p>
+          <h5>What do I do<span class="period-mark">.</span></h5>
+          <ul>
+            <li>ESP32 - 가속도센서 I2C 통신</li>
+            <li>파이썬과 tensorflow로 autoencoder 모델 구축</li>
+            <li>tensorflow-lite로 모델 변경하여 ESP32에 적용</li>
+            <li>모델 양자화(int8) 및 최적화</li>
+          </ul>
+          <h5>Tech Stack<span class="period-mark">.</span></h5>
+          <p>
+            C, C++, ESP32, FreeRTOS, Python, Tensorflow, Tensorflow-lite
+          </p>
+        </div>
 
         <div class="other">
           <h3>AWS Transcribe를 사용한 Speech-To-Text(SpeechNote) 웹 서비스<span class="period-mark">.</span></h3>
